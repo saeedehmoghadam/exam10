@@ -4,7 +4,7 @@ class Film(Media.Media):
     def __init__(self):
         self.list=[]
         mydict={}
-        myfile=open("databasefilm.txt","r")
+        myfile=open("database.txt","r")
         rows=myfile.read().split("\n")
         for i in range(len(rows)):
             media=rows[i].split(",")
